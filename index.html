@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 인터넷 익스프로러에서도 엣지 브라우저처럼 보이게 해라 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- // 위 메타태그가 없으면 핸드폰에서 글자들 엄청 작게 나옴 - 핸드폰에서 데스크탑 보듯이 -->
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+  <title>NAVER</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<!-- head => html에 대한 문서 설명 => 데어터 => 데이터에대한 데이터는 메타태그(메타데이터) -->
+
+<body>
+  <div id="wrap">
+    <div id="wrap-center">
+      <header id="header">
+        <button id="header-hamburger">
+          <span class="blind">확장 영역</span>
+        </button>
+        <button id="header-npay">
+          <span class="blind">네이버페이</span>
+        </button>
+        <button id="header-talk">
+          <span class="blind">네이버톡</span>
+        </button>
+        <button id="header-notice">
+          <span class="blind">알림</span>
+        </button>
+        <button id="header-shopping">
+          <span class="blind">네이버쇼핑</span>
+        </button>
+      </header>
+      <div id="search">
+        <form action="">
+          <a id="search-svg" href="#">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path>
+            </svg>
+          </a>
+          <!-- input태그를 사용할 때 form을 사용하면 좋은 점: input에 값을 입력하고 엔터를 눌렀을 때 결과창으로 바로 넘어감 -->
+          <label for="search-input" class="blind">검색어 입력</label>
+          <input id="search-input" type="text" placeholder="검색어를 입력해 주세요." />
+          <div id="search-right">
+            <button id="search-keyboard"><span class="blind">입력도구</span></button>
+            <button id="search-recent"><span class="blind">자동완성 펼치기</span></button>
+            <button id="search-button"><span class="blind">검색</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>메일</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>카페</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>블로그</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>쇼핑</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>뉴스</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>증권</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>부동산</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>지도</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span>웹툰</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>
+                <img src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png"
+                  width="40" height="40" class="service_img" alt="치지직">
+              </span>
+              <span>치지직</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <span
+                  style="background-image: url(&quot;https://ssl.pstatic.net/melona/libs/1506/1506032/098ad7eaaa945b3e053d_20240801145336663.jpg&quot;);">
+                </span>
+              </div>
+              <span>DB다이렉트</span>
+              <i class="ico_ad"><span class="blind">AD</span></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main">
+        <div id="main-left">
+          <aside id="main-left-ad"></aside>
+          <section id="main-newstand">
+            <div id="main-newstand-top">
+              <header>
+                <a href="#" class="selected">뉴스스탠드</a>
+                <a href="#" class="dot">언론사편집</a>
+                <a href="#" class="slash">엔터</a>
+                <a href="#" class="slash">스포츠</a>
+                <a href="#" class="slash">경제</a>
+                <a href="#" class="slash">쇼핑투데이</a>
+              </header>
+              <div id="main-gray" class="main-gray" style="height: 53px;">
+                <div class="left">
+                  <a href="#">전체언론사<i></i></a>
+                </div>
+                <div id="main-newstand-animation" class="center">
+                  <a href="#">연합뉴스</a>
+                  <div id="main-newstand-animation-target">
+                    <div>
+                      <a href="#">박원지 다이어트 성공할 것 같아</a>
+                      <a href="#">박원지 이직 성공</a>
+                      <a href="#">박원지 아모레퍼시픽 입사</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <a href="#">뉴스스탠드</a>
+                  <a href="#">뉴스홈</a>
+                </div>
+              </div>
+              <div id="main-newstand-grid">
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/047.png" height="20"
+                    alt="오마이뉴스" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/052.png" height="20" alt="YTN"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/030.png" height="20" alt="전자신문"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png" height="20" alt="프레시안"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2024/0219/nsd145828169.png" height="20" alt="한겨레"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/029.png" height="20"
+                    alt="디지털타임스" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/031.png" height="20"
+                    alt="아이뉴스24" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/326.png" height="20"
+                    alt="KBS World" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2024/0124/nsd95528325.png" height="20" alt="뉴데일리"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2020/0903/nsd185255316.png" height="20"
+                    alt="조선일보" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/293.png" height="20" alt="블로터"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png" height="20"
+                    alt="미디어오늘" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png" height="20"
+                    alt="연합뉴스TV" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2021/0824/nsd115034872.png" height="20"
+                    alt="중앙일보" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/016.png" height="20"
+                    alt="헤럴드경제" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/977.png" height="20" alt="헬로디디"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/979.png" height="20" alt="약사공론"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2023/0213/nsd17943530.png" height="20" alt="비즈워치"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/042.png" height="20"
+                    alt="데일리한국" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2024/0531/nsd115428801.png" height="20"
+                    alt="한경머니" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/up/2021/1221/nsd15292271.png" height="20"
+                    alt="M이코노미뉴스" class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/816.png" height="20" alt="시사오늘"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/914.png" height="20" alt="뉴스핌"
+                    class="news_logo"></a>
+                <a><img src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/908.png" height="20" alt="국방일보"
+                    class="news_logo"></a>
+              </div>
+            </div>
+            <footer>
+              <button class="prev"><span class="blind">이전</span></button>
+              <div><span class="news">언론사</span>&nbsp;더보기&nbsp;1<span class="total">/4</span>
+              </div>
+              <button class="next"><span class="blind">다음</span></button>
+              <div>
+                <button class="list"><span class="blind">목록보기</span></button>
+                <button class="grid"><span class="blind">격자보기</span></button>
+              </div>
+            </footer>
+          </section>
+          <section id="main-shopping">
+            <div id="main-shopping-top">
+              <header>
+                <a href="#" class="selected">쇼핑</a>
+                <a href="#" class="slash">맨즈</a>
+                <a href="#" class="slash">원쁠딜</a>
+                <a href="#" class="slash">쇼핑라이브</a>
+                <div class="right">
+                  <div class="pagination">1<span class="total">/13</span>
+                  </div>
+                  <button class="prev"><span class="blind">이전</span></button>
+                  <button class="next"><span class="blind">다음</span></button>
+                </div>
+              </header>
+              <div class="main-gray">
+                <div class="left">
+                  <a href="#">전체언론사<i></i></a>
+                </div>
+                <div class="center">
+                  <a href="#">연합뉴스</a>
+                  <a href="#">박원지 다이어트 성공할 것 같아</a>
+                </div>
+                <div class="right">
+                  <a href="#">뉴스스탠드</a>
+                  <a href="#">뉴스홈</a>
+                </div>
+              </div>
+              <div id="shopping-grid">
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="text"></div>
+                </div>
+                <div class="item">
+                  <div class="text"></div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div class="image"></div>
+                  <div class="text">독보적인 퀄리티 우린품격을입어요</div>
+                </div>
+                <div class="item">
+                  <div></div>
+                  <div>더보기더보기더보기더보기더보기</div>
+                </div>
+              </div>
+            </div>
+            <footer>
+              <button class="prev"><span class="blind">이전</span></button>
+              <div><span class="news">쇼핑아이템</span>&nbsp;더보기&nbsp;1<span class="total">/13</span>
+              </div>
+              <button class="next"><span class="blind">다음</span></button>
+            </footer>
+          </section>
+        </div>
+        <div id="main-right">
+          <section id="main-login">
+            <p id="login-text">네이버를 더 안전하고 편리하게 이용하세요</p>
+            <a href="#" id="main-login-button"><i></i>로그인</a>
+            <div>
+              <a href="#">아이디 찾기</a>
+              <a href="#">비밀번호 찾기</a>
+              <a href="#">회원가입</a>
+            </div>
+          </section>
+          <aside id="main-right-ad"></aside>
+          <aside id="main-right-img-ad"></aside>
+          <aside id="main-right-shopping-ad"></aside>
+          <section id="main-weather" class="main-weather-and-stock">
+            <header>날씨</header>
+            <div>
+              <a href=""></a>
+              <button></button>
+              <div></div>
+            </div>
+          </section>
+          <section id="main-stock" class="main-weather-and-stock">
+            <header>증시</header>
+            <div></div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
